@@ -4,4 +4,4 @@
 # TEE/Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service.amlogic
 vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc
--vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml

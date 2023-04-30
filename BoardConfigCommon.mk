@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/amlogic/g12-common
+COMMON_PATH := device/amlogic/ne-common
 
 ## BUILD_BROKEN_*
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -57,4 +57,4 @@ VENDOR_SECURITY_PATCH := 2022-12-01
 include device/amlogic/common/BoardConfigAmlogic.mk
 
 ## Include the common proprietary BoardConfig makefile
-include vendor/amlogic/g12-common/BoardConfigVendor.mk
+include vendor/amlogic/ne-common/BoardConfigVendor.mk

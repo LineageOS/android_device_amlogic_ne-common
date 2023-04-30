@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "g12a g12b sm1" "TARGET_AMLOGIC_SOC"
+write_headers "s4 sc2 t7" "TARGET_AMLOGIC_SOC"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

@@ -127,14 +127,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 ## Platform
-TARGET_AMLOGIC_SOC ?= g12a
+TARGET_AMLOGIC_SOC ?= s4
 
 ## Power
 PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk_platform.vendor
 
 ## Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 ## Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -152,4 +152,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/amlogic/common/amlogic.mk)
 
 ## Inherit from the common proprietary files makefile
-$(call inherit-product, vendor/amlogic/g12-common/g12-common-vendor.mk)
+$(call inherit-product, vendor/amlogic/ne-common/ne-common-vendor.mk)

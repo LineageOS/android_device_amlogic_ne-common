@@ -56,6 +56,12 @@ vendor/etc/bluetooth/bt_vendor_usb.conf
 vendor/etc/init/android.hardware.bluetooth@1.0-service-droidlogic.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-droidlogic.so
 
+# Boot
+vendor/bin/hw/android.hardware.boot@1.2-service.droidlogic
+vendor/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so
+vendor/etc/init/android.hardware.boot@1.2-service.droidlogic.rc
+vendor/etc/vintf/manifest/android.hardware.boot@1.2.droidlogic.xml
+
 # Camera
 vendor/lib/hw/camera.amlogic.so
 vendor/lib/libispaaa.so
@@ -200,6 +206,12 @@ vendor/etc/init/android.hardware.power-service.libperfmgr.rc
 vendor/etc/powerhint.json
 vendor/lib/libdisppower.so
 vendor/lib/libperfmgr.so
+
+# Recovery
+recovery/root/system/bin/systemcontrol_static
+recovery/root/sbin/mesondisplay.cfg
+recovery/root/system/lib/hw/android.hardware.fastboot@1.0-impl-amlogic.so
+recovery/root/system/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so
 
 # remotecfg
 vendor/bin/remotecfg

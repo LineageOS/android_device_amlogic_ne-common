@@ -144,6 +144,20 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier \
+    android.hardware.boot@1.2 \
+    android.hardware.boot@1.2.vendor
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
+
+PRODUCT_PACKAGES += \
+    libhardware.recovery
+
 ## USB
 PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.2.vendor

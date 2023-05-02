@@ -1,0 +1,12 @@
+blocklist hifidsp
+blocklist snd-soc-aml_codec_tl1_acodec
+blocklist snd-soc-tas5805
+blocklist dvb_demux
+blocklist aml_spicc
+blocklist aml_spifc
+blocklist meson_spi_nand
+blocklist meson_mtd_reserve
+blocklist meson_mtd_nfc
+blocklist spinand
+blocklist spi-nor
+blocklist aml_aucpu

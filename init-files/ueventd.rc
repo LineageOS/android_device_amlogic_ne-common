@@ -1,63 +1,62 @@
-## /dev/ devices
-#
+# /dev/ devices
+
 
 # Amlogic AV streaming devices
 /dev/amvideo              0666   media        system
 /dev/ionvideo             0666   media        system
-/dev/video_composer.0     0660   media        system
-/dev/video_composer.1     0660   media        system
+/dev/video_composer.0     0660   media     system
+/dev/video_composer.1     0660   media     system
 /dev/ppmgr                0660   media        system
 /dev/amstream_*           0666   media        system
 /dev/audiodsp0            0660   media        system
 /dev/uio0                 0666   system       mediadrm
 /dev/video0               0660   system       camera
 /dev/video1               0660   system       camera
-/dev/video2               0660   system       camera
 /dev/video10              0660   system       mediadrm
 /dev/video11              0660   media        system
-/dev/video13              0666   system       mediadrm
-/dev/video14              0666   system       mediadrm
-/dev/video15              0666   system       mediadrm
-/dev/video16              0666   system       mediadrm
+/dev/video13              0660   system       mediadrm
+/dev/video14              0660   system       mediadrm
+/dev/video15              0660   system       mediadrm
+/dev/video16              0660   system       mediadrm
 /dev/video16              0660   system       mediadrm
 /dev/video17              0660   system       mediadrm
 /dev/video18              0660   system       mediadrm
 /dev/video19              0660   system       mediadrm
 /dev/video20              0660   system       mediadrm
 /dev/video21              0660   system       mediadrm
-/dev/video23              0660   system       mediadrm
-/dev/video26              0660   system       mediadrm
-/dev/video30              0660   system       mediadrm
-/dev/video31              0660   system       mediadrm
-/dev/video32              0660   system       mediadrm
-/dev/video33              0660   system       mediadrm
-/dev/video34              0660   system       mediadrm
-/dev/video35              0660   system       mediadrm
-/dev/video36              0660   system       mediadrm
-/dev/video37              0660   system       mediadrm
-/dev/video38              0660   system       mediadrm
-/dev/video50              0660   system       camera
+/dev/video23              0660   system     mediadrm
+/dev/video26              0660   system     mediadrm
+/dev/video30              0660   system     mediadrm
+/dev/video31              0660   system     mediadrm
+/dev/video32              0660   system     mediadrm
+/dev/video33              0660   system     mediadrm
+/dev/video34              0660   system     mediadrm
+/dev/video35              0660   system     mediadrm
+/dev/video36              0660   system     mediadrm
+/dev/video37              0660   system     mediadrm
+/dev/video38              0660   system     mediadrm
+/dev/video50              0660   system     camera
 /dev/amaudio_utils        0660   media        system
 /dev/amaudio_ctl          0660   media        system
 /dev/amvenc_avc           0660   mediacodec   system
-/dev/amvecm               0660   system       system
 /dev/HevcEnc              0660   mediacodec   system
 /dev/amsubtitle           0660   media        system
-/dev/jpegenc              0660   media        system
-/dev/videosync            0666   media        system
-/dev/media*               0666   media        system
-/dev/tsync                0666   media        system
-/dev/ac_sbuf0             0660   system       camera
-/dev/ac_isp4uf            0660   system       camera
-/dev/secmem               0660   system       mediadrm
-/dev/amresource_mgr       0666   media        system
+/dev/jpegenc              0660   system     camera
+/dev/amvenc_multi         0660   mediacodec   system
+/dev/videosync            0666   media     system
+/dev/media*               0666   media     system
+/dev/tsync                0666   media     system
+/dev/ac_sbuf0             0660   system    camera
+/dev/ac_isp4uf            0660   system    camera
+/dev/secmem               0660   system     mediadrm
+/dev/amresource_mgr       0666   media     system
 
-# Audio data
+#audio data
 /dev/audio_data_debug     0660   mediacodec   audio
 /dev/amjpegdec            0666   system       system
 /dev/ge2d                 0660   system       system
 /dev/vdin0                0660   system       system
-/dev/vdin1                0660   system       system
+/dev/vdin1                0660   system     system
 /dev/virtmem              0666   system       system
 
 # Mali
@@ -69,16 +68,18 @@
 # uvm
 /dev/uvm                  0666   system       graphics
 
-# Video tunnel
+# video tunnel
 /dev/videotunnel          0666   system       graphics
 
 # sw_sync
 /dev/sw_sync              0666   system       graphics
 
-# Possible serial
+#possible serial
+/dev/ttyS0                0660   bluetooth    bluetooth
 /dev/ttyS1                0660   bluetooth    bluetooth
-/dev/ttyS2                0660   bluetooth    bluetooth
+/dev/ttyS2                0666   system       system
 /dev/ttyS3                0666   system       system
+/dev/ttyS4                0666   system       system
 /dev/ttya0                0660   system       system
 /dev/ttya1                0660   system       system
 /dev/ptya0                0660   system       system
@@ -93,7 +94,7 @@
 
 
 /dev/rtk_btusb            0660   bluetooth    bluetooth
-# mtkbt
+#mtkbt
 /dev/stpbt                0664   bluetooth    bluetooth
 /dev/rtkbt_dev            0660   bluetooth    bluetooth
 /dev/hidraw*              0660   system       audio
@@ -121,7 +122,7 @@
 # /sys/ sysfs
 #
 
-# Bluetooth
+#bluetooth
 /sys/devices/platform/bt-dev/rfkill/rfkill0   state   0666    bluetooth   bluetooth
 /sys/devices/platform/bt-dev/rfkill/rfkill0   type    0660    bluetooth   bluetooth
 /sys/devices/platform/aml_bt/rfkill/rfkill0   state   0666    bluetooth   bluetooth
@@ -131,20 +132,19 @@
 /sys/devices/platform/mtty.0/rfkill/rfkill1    state   0660    bluetooth   bluetooth
 /sys/devices/platform/mtty.0/rfkill/rfkill1    type    0660    bluetooth   bluetooth
 
-# HDMI CEC
+#hdmi cec
 /sys/class/amhdmitx/amhdmitx0       hpd_state               0664      system      system
 /sys/class/amhdmitx/amhdmitx0       disp_mode               0664      system      system
 /sys/class/amhdmitx/amhdmitx0       config                  0664      system      system
 /sys/class/amhdmitx/amhdmitx0       avmute                  0664      system      system
 /sys/class/amhdmitx/amhdmitx0       aud_ch                  0664      system      mediadrm
-/sys/class/amhdmitx/amhdmitx0       frac_rate_policy        0664      system      system
 
 /sys/class/amhdmitx/amhdmitx0       allm_cap                0664      system      system
 /sys/class/amhdmitx/amhdmitx0       allm_mode               0664      system      system
 /sys/class/amhdmitx/amhdmitx0       contenttype_cap         0664      system      system
 /sys/class/amhdmitx/amhdmitx0       contenttype_mode        0664      system      system
 
-# Graphics
+#graphic
 /sys/class/graphics/fb*             blank                   0664      media       system
 /sys/class/graphics/fb*             order                   0664      media       system
 /sys/class/graphics/fb*             scale                   0664      media       system
@@ -161,13 +161,11 @@
 /sys/class/graphics/fb0             free_scale_axis         0664      system      system
 /sys/class/graphics/fb0             window_axis             0664      system      system
 
-# CPU
+#cpu
 /sys/devices/system/cpu/cpu1        online                          0664      system      system
 /sys/devices/system/cpu/cpu0        cpufreq/scaling_governor        0664      system      system
 /sys/devices/system/cpu/cpu0        cpufreq/hmp_boost               0664      system      system
 
-# LED
-/sys/devices/platform/gpioleds/leds/yellow_led    trigger      0666  root root
+#led
+/sys/devices/platform/gpioleds/leds/yellow_led    trigger   0666  root root
 /sys/devices/platform/gpioleds/leds/sys_led       brightness   0666  root root
-
-parallel_restorecon enabled

@@ -247,6 +247,20 @@ vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so
 vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so
 vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so
 
+# TEE-supplicant - form vim1s
+vendor/lib/libtee_load_video_fw.so
+vendor/lib/libteec.so
+vendor/bin/tee-supplicant
+vendor/bin/tee_preload_fw
+vendor/etc/init/tee-supplicant.rc
+vendor/etc/init/tee_preload_fw.rc
+
+# TEE-HDCP - from vim1s
+vendor/bin/tee_hdcp
+vendor/bin/tee_key_inject
+vendor/etc/init/tee_hdcp.rc
+vendor/etc/init/tee_key_inject.rc
+
 # Thermal
 -vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.droidlogic.xml
 vendor/bin/hw/android.hardware.thermal@2.0-service.droidlogic

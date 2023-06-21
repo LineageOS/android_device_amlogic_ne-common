@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Target kernel, must be set before inheriting common tree
+TARGET_KERNEL_VERSION := 5.4
+
 COMMON_PATH := device/amlogic/ne-common
 
 # A/B

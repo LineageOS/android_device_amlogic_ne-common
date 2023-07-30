@@ -8,7 +8,6 @@ adc_keypad.ko
 aml_crypto_dma.ko
 aml_ddr_tool.ko
 aml_drm.ko
-aml_dsm.ko
 aml_dvb_extern.ko
 aml_gki_tool.ko
 aml_irblaster.ko

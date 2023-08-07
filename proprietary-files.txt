@@ -155,6 +155,11 @@ vendor/usr/keylayout/Vendor_7545_Product_0021.kl
 vendor/usr/keylayout/Vendor_7545_Product_0180.kl
 vendor/usr/keylayout/Vendor_7545_Product_0190.kl
 
+# Lights
+vendor/bin/hw/lights
+vendor/etc/init/lights.rc
+-vendor/etc/vintf/manifest/lights.xml
+
 # Media (Hardware) - from onn4k
 vendor/bin/DecInfo_test
 vendor/bin/esplayer

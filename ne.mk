@@ -127,6 +127,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service
 endif
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk_platform.vendor

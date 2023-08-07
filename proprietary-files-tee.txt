@@ -1,19 +1,7 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
 ##  are from adt3-user 12 STT1.211025.001.Z4 7928920 release-keys.
 
-## TEE/Keymaster
+# TEE/Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service.amlogic
 vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml
-
-## Playready
-# Depends on `libtee.so`
-vendor/bin/hw/android.hardware.drm@1.4-service.playready
-vendor/etc/init/android.hardware.drm@1.4-service.playready.rc
-vendor/etc/drm/playready/bgroupcert.dat
-vendor/etc/drm/playready/zgpriv.dat
-vendor/etc/drm/playready/zgpriv_protected.dat
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml
-vendor/lib/libplayready.so
-vendor/lib/libplayreadymediadrmplugin.so
-

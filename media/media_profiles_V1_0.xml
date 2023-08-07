@@ -2,33 +2,6 @@
 
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <CamcorderProfiles cameraId="0">
-
-        <EncoderProfile quality="1080p" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-            bitRate="8000000"
-            width="1920"
-            height="1080"
-            frameRate="30" />
-
-            <Audio codec="amrwb"
-            bitRate="23050"
-            sampleRate="16000"
-            channels="1" />
-        </EncoderProfile>
-
-        <EncoderProfile quality="timelapse1080p" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-            bitRate="8000000"
-            width="1920"
-            height="1080"
-            frameRate="30" />
-
-            <Audio codec="amrwb"
-            bitRate="23050"
-            sampleRate="16000"
-            channels="1" />
-        </EncoderProfile>
-
         <EncoderProfile quality="720p" fileFormat="3gp" duration="60">
             <Video codec="h264"
             bitRate="6000000"

@@ -1,4 +1,3 @@
-aml_i2c.ko
 aml_media.ko
 snd-soc-dummy_codec.ko
 snd-soc-aml_t9015.ko
@@ -12,18 +11,14 @@ aml_dvb_extern.ko
 aml_gki_tool.ko
 aml_irblaster.ko
 aml_mailbox.ko
-aml_mdio_g12a.ko
 aml_rng.ko
 audio_data.ko
 audiodsp.ko
 dolby_fw.ko
-dwmac-dwc-qos-eth.ko
-dwmac-meson8b.ko
 exfat.ko
 gpio_keypad.ko
 leds-tlc59116.ko
 leds_state.ko
-mdio_mux.ko
 meson-clk-debug.ko
 meson-clk-measure.ko
 meson-cpufreq.ko
@@ -32,9 +27,6 @@ meson_gxbb_wdt.ko
 meson_ir.ko
 meson_jtag.ko
 meson_saradc.ko
-phylink.ko
-pps_core.ko
-ptp.ko
 reboot.ko
 reg_access.ko
 rtc-meson-vrtc.ko
@@ -43,5 +35,4 @@ snd-soc-tas5707.ko
 snd-usb-audio.ko
 snd-usbmidi-lib.ko
 snd_soc_notify.ko
-stmmac-platform.ko
-stmmac.ko
+aml_spicc.ko

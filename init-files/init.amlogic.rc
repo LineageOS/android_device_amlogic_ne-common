@@ -5,6 +5,7 @@ import /vendor/etc/init/hw/init.amlogic.media.rc
 import /vendor/etc/init/hw/init.amlogic.wifi_buildin.rc
 import /vendor/etc/init/cppreopts_amlogic.rc
 import /vendor/etc/init/hw/init.amlogic.bluetooth.rc
+import /vendor/etc/init/hw/init.dtvstack.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
@@ -13,6 +14,7 @@ on early-init
 on init
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
+    #start console
     #30 means reserve 3% memory using for high water mark, 1GB DDR x 3% = 30MB
     write /proc/sys/vm/watermark_scale_factor 30
     write /proc/sys/vm/watermark_boost_factor 0
@@ -68,40 +70,10 @@ on boot
 
     chmod 666 /sys/class/video/show_first_frame_nosync
     chown media system /sys/class/video/show_first_frame_nosync
- 
-    chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
-    chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_cur_freq
-    chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/cpuinfo_cur_freq
-    chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/cpuinfo_cur_freq
-
-    chmod 666 /sys/class/leds/state_led/state_brightness
-    chmod 666 /sys/class/leds/state_led/breath
-    
-    chmod 666 /sys/class/fan/enable
-    chmod 666 /sys/class/fan/level
-    chmod 666 /sys/class/fan/mode
-    chmod 666 /sys/class/fan/temp
-    chmod 666 /sys/class/fan/trigger_temp_high
-    chmod 666 /sys/class/fan/trigger_temp_low
-    chmod 666 /sys/class/fan/trigger_temp_mid
-    chmod 666 /sys/class/mcu/poweroff
-    chmod 666 /sys/class/mcu/rst
-    chmod 666 /sys/class/mcu/redled
-
-    chmod 666 /sys/class/mcu/wol_enable
-    chmod 666 /sys/class/mcu/ageing_test
-
-    chmod 666 /sys/class/efuse/mac
-    chmod 666 /sys/class/efuse/usid
-
-    chmod 666 /sys/class/rtc/rtc0/bootalarm
 
     #0: normal user and root user can read
     #1: only root user can read
     write /proc/sys/kernel/dmesg_restrict 0
-
-	chmod 0644 /dev/amvenc_multi
-	chmod 0644 /dev/jpegenc
 
 
 service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sdcard1 /storage/sdcard1
@@ -135,11 +107,12 @@ service remotecfg /vendor/bin/remotecfg /vendor/etc/remote.conf
     oneshot
     seclabel u:r:remotecfg:s0
 
-service hdcp_tx22 /vendor/bin/hdcp_tx22 \
+service hdcp_tx22 /odm/bin/hdcp_tx22 \
     -f /odm/etc/firmware/firmware.le
     class main
     disabled
     oneshot
+
 
 #service hdcp_rx22 /vendor/bin/hdcp_rx22 \
 #    -f /mnt/vendor/param/firmware.le
@@ -148,24 +121,24 @@ service hdcp_tx22 /vendor/bin/hdcp_tx22 \
 #    oneshot
 #    seclabel u:r:hdcp_rx22:s0
 
+service factoryreset /mnt/vendor/tee/factoryreset.sh
+    class main
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 service bugreport /system/bin/dumpstate -d -p -B -z \
     -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
     disabled
     oneshot
 
-on property:persist.vendor.bt_module=rtk_btusb
-    insmod /vendor/lib/modules/rtk_btusb.ko
-
-on property:persist.vendor.bt_module=btmtk_usb
-    insmod /vendor/lib/modules/btmtk_usb.ko
-
-on property:persist.vendor.bt_module=btmtksdio
-    insmod /vendor/lib/modules/btmtksdio.ko
-
-on property:persist.vendor.bt_module=sprdbt_tty
-    insmod /vendor/lib/modules/uwe5621_bsp_sdio.ko
-    insmod /vendor/lib/modules/sprdbt_tty.ko
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.amlogic
+    start factoryreset
 
 service pppoe_wrapper /system/bin/pppoe_wrapper
     class main

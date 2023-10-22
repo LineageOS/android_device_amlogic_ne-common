@@ -107,8 +107,6 @@ vendor/etc/init/android.hardware.health@2.1-service.droidlogic.rc
 vendor/etc/vintf/manifest/android.hardware.health@2.1-servcie.droidlogic.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1.droidlogic.so
 
-vendor/lib/modules/amlogic_fbc_lib.ko
-
 # ICU
 vendor/lib/libicuuc_vendor.so
 
@@ -121,7 +119,7 @@ vendor/etc/init/power.rc
 vendor/etc/init/sysfs_permissions.rc
 
 # Kernel modules
-vendor_dlkm/lib/modules/aml_chcon.ko:vendor/lib/modules/amlogic_fbc_lib.ko
+vendor_dlkm/lib/modules/amlogic_fbc_lib.ko:vendor/lib/modules/amlogic_fbc_lib.ko
 vendor_dlkm/lib/modules/aml_chcon.ko:vendor/lib/modules/aml_chcon.ko
 
 # Keylayouts

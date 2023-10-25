@@ -194,6 +194,7 @@ vendor/lib/libthreadworker_alt.so
 # Power
 vendor/bin/hw/android.hardware.power.aidl-service.droidlogic
 vendor/etc/init/android.hardware.power-service.libperfmgr.rc
+vendor/etc/vintf/manifest/android.hardware.power-service.xml
 vendor/lib/libdisppower.so
 vendor/lib/libperfmgr.so
 vendor/etc/powerhint.json

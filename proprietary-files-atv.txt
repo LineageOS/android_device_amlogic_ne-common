@@ -2,13 +2,13 @@
 ##  are from adt3-user 12 STT1.211025.001.Z4 7928920 release-keys.
 
 # ATV specific
-product/etc/permissions/privapp-permissions-atv-product.xml
-product/etc/permissions/privapp-permissions-google-p.xml
-product/etc/permissions/split-permissions-google.xml
-product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
-product/etc/sysconfig/google.xml:product/etc/sysconfig/google-lineage.xml
-product/etc/sysconfig/google_atv.xml
-product/priv-app/DfuService/DfuService.apk
-system/etc/permissions/privapp-permissions-google.xml
-system_ext/etc/permissions/privapp-permissions-google-se.xml
+product/etc/permissions/privapp-permissions-atv-product.xml|e9aa5cfbe0811c9c17a30c9c9b1aa0f80409b6dc
+product/etc/permissions/privapp-permissions-google-p.xml|71028ac81cffab36300805338bdb965d2227822d
+product/etc/permissions/split-permissions-google.xml|49453d8562a0d8879edb5862cbd4c2d8ee094685
+product/etc/sysconfig/google-hiddenapi-package-whitelist.xml|d7b5d98bb711a2bcf9346e4a7764c9a309283f1d
+product/etc/sysconfig/google.xml:product/etc/sysconfig/google-lineage.xml|3baf07aa710da33e892b06b800cdb07bfbb71b1c
+product/etc/sysconfig/google_atv.xml|7c071f817c623aa2a9a548959332aa9e9ce75a05
+product/priv-app/DfuService/DfuService.apk|10461025e9fa10e06fc0e95dccc1fb72b5925462
+system/etc/permissions/privapp-permissions-google.xml|111829a722f497b13ff9765fdc56f6b3481548fc
+system_ext/etc/permissions/privapp-permissions-google-se.xml|7bd9601dd037411fea50e9c7cafa9fcd1cbcee7f
 

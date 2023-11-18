@@ -1,5 +1,5 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
-##  are from adt3-user 12 STT1.211025.001.Z4 7928920 release-keys.
+##  are from onn_4k_gtv-user 12 SGZ1.221127.063.A1 9885170 release-keys.
 
 # TEE/Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service.amlogic

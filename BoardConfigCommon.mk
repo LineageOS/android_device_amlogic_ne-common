@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/amlogic/g12-common
+COMMON_PATH := device/amlogic/ne-common
 
 ## Architecture
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
@@ -64,7 +64,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
-TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/g12-common/proprietary
+TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/ne-common/proprietary
 ifneq ($(strip $(TARGET_BOOTDEVICE)),)
   TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.$(TARGET_BOOTDEVICE).amlogic
 else
@@ -84,4 +84,4 @@ VENDOR_SECURITY_PATCH := 2024-07-01
 include device/amlogic/common/BoardConfigAmlogic.mk
 
 ## Include the common proprietary BoardConfig makefile
-include vendor/amlogic/g12-common/BoardConfigVendor.mk
+include vendor/amlogic/ne-common/BoardConfigVendor.mk

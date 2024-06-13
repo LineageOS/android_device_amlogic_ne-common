@@ -8,6 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 # Set kernel version for use in inherited makefiles
 TARGET_KERNEL_VERSION := 5.4
+PRODUCT_ENABLE_UFFD_GC := false
 
 # Atrace
 PRODUCT_PACKAGES += \

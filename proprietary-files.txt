@@ -102,9 +102,6 @@ vendor/lib/libamgralloc_ext.so
 ## HDMI CEC
 vendor/lib/hw/hdmi_cec.amlogic.so
 
-## Kernel Modules
-vendor_dlkm/lib/modules/amlogic_fbc_lib.ko
-
 ## ICU
 vendor/lib/libicuuc_vendor.so
 

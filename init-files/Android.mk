@@ -23,7 +23,7 @@ LOCAL_SRC_FILES        := fstab.amlogic
 else
 LOCAL_SRC_FILES        := fstab_no_avb.amlogic
 endif
-LOCAL_MODULE_PATH      := $(TARGET__RAMDISK_OUT)
+LOCAL_MODULE_PATH      := $(TARGET_RAMDISK_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

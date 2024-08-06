@@ -1,8 +1,3 @@
-on early-init
-    loglevel 3
-
-on init
-
 on post-fs-data
     insmod /vendor/lib/modules/mali.ko
     insmod /oem/overlay/dovi.ko

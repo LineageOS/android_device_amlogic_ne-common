@@ -16,14 +16,12 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     odm \
-    odm_dlkm \
     product \
     system \
     system_ext \
     vbmeta \
     vbmeta_system \
-    vendor \
-    vendor_dlkm
+    vendor
 
 ## BUILD_BROKEN_*
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true

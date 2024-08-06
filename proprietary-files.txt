@@ -171,6 +171,9 @@ vendor/etc/remote.tab1
 vendor/etc/remote.tab2
 vendor/etc/remote.tab3
 
+## resmanload
+vendor/bin/resmanload
+
 ## screen_source
 vendor/lib/hw/screen_source.amlogic.so
 

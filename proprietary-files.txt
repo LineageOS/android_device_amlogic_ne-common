@@ -114,8 +114,8 @@ vendor/etc/init/power.rc
 vendor/etc/init/sysfs_permissions.rc
 
 ## Kernel modules - Pinned for convienence
-vendor_dlkm/lib/modules/aml_chcon.ko
-vendor_dlkm/lib/modules/amlogic_fbc_lib.ko
+vendor_dlkm/lib/modules/aml_chcon.ko:vendor/lib/modules/aml_chcon.ko|82f4190485c9a030ff8767939876035ed9207001
+vendor_dlkm/lib/modules/amlogic_fbc_lib.ko:vendor/lib/modules/amlogic_fbc_lib.ko|572a73fce5a586d4e02231c8d01b9ff2baac941a
 
 ## Lights
 vendor/bin/hw/lights

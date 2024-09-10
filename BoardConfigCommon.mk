@@ -49,10 +49,8 @@ TARGET_KERNEL_EXT_MODULES += \
     mali-driver/bifrost \
     media-5.4
 
-ifneq ($(TARGET_HAS_TEE),false)
 TARGET_KERNEL_EXT_MODULES += \
     optee
-endif
 
 TARGET_MODULE_ALIASES += \
     mali_kbase.ko:mali.ko

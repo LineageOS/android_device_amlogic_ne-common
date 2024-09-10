@@ -36,7 +36,9 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 ## Kernel
 BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.boot_devices=soc/fe08c000.mmc use_uvm=1
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-5.4
-
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+#TARGET_KERNEL_LLVM_BINUTILS := false
 ifeq ($(WITH_CONSOLE),true)
 BOARD_KERNEL_CMDLINE += console=ttyS0,921600 no_console_suspend ignore_loglevel
 endif

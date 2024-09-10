@@ -63,7 +63,7 @@ BOARD_GENERIC_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/
 
 ## Partitions
 SSI_PARTITIONS := product system system_ext
-TREBLE_PARTITIONS := odm vendor vendor_dlkm
+TREBLE_PARTITIONS := odm vendor
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
 # TODO: VBMETA_OEM

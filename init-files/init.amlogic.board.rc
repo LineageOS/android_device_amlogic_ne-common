@@ -36,3 +36,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-1
     write /dev/cpuset/restricted/cpus 0-1
     write /sys/class/dmabuf_manage/dmabuf_manage_config "dmabuf_manage.secure_vdec_def_size_bytes=16777216"
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1

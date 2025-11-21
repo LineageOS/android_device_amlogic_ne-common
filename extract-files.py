@@ -30,7 +30,7 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/hw/mapper.arm.so',
        'vendor/bin/hw/android.hardware.graphics.allocator-service'
     ): blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
+        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/lib/libamlaudiohal@7.0.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/lib/hw/audio.primary.amlogic.so': blob_fixup()

@@ -6,6 +6,24 @@
 
 COMMON_PATH := device/amlogic/ne-common
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
 ## BUILD_BROKEN_*
 # Needed for systemcontrol blobs copy-files to recovery via TARGET_RECOVERY_DEVICE_DIRS
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -14,38 +32,34 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
-BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true use_uvm=1
+BOARD_KERNEL_CMDLINE := bootconfig
+BOARD_BOOTCONFIG += androidboot.dynamic_partitions=true
+BOARD_BOOTCONFIG += androidboot.dtbo_idx=0
+BOARD_BOOTCONFIG += use_uvm=1
 ifeq ($(TARGET_BOOTDEVICE),usb)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ff500000.dwc3
+  BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fde00000.dwc3
 else ifeq ($(TARGET_BOOTDEVICE),sdcard)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe05000.sd2
+  BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08a000.sd
 else
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe07000.emmc
-endif
-TARGET_KERNEL_CONFIG := g12a_defconfig
-TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9
-
-ifeq ($(WITH_CONSOLE),true)
-  BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
+  BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08c000.mmc
 endif
 
-## Kernel modules
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/amlogic/kernel-modules
-TARGET_KERNEL_EXT_MODULES += \
-    mali-driver/bifrost \
-    media-4.9
+BOARD_USES_ODM_DLKMIMAGE := true
+TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 
-ifneq ($(TARGET_HAS_TEE),false)
-TARGET_KERNEL_EXT_MODULES += \
-    optee
-endif
+BOARD_USES_SYSTEM_DLKMIMAGE := true
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 
-TARGET_MODULE_ALIASES += \
-    mali_kbase.ko:mali.ko
+BOARD_USES_VENDOR_DLKMIMAGE := true
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
+TARGET_KERNEL_VERSION ?= 5.15
 
 ## Partitions
-SSI_PARTITIONS := product system system_ext
-TREBLE_PARTITIONS := odm vendor vendor_dlkm
+SSI_PARTITIONS := product system system_ext system_dlkm
+TREBLE_PARTITIONS := odm odm_dlkm vendor vendor_dlkm
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
 BOARD_AMLOGIC_DYNAMIC_PARTITIONS_PARTITION_LIST := $(ALL_PARTITIONS)
@@ -59,18 +73,15 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=true
+TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/ne-common/proprietary
 ifneq ($(strip $(TARGET_BOOTDEVICE)),)
   TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.$(TARGET_BOOTDEVICE).amlogic
 else
   TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
 endif
-
-## Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
-
-## Updater
-AB_OTA_UPDATER := false
 
 ## Vendor SPL
 VENDOR_SECURITY_PATCH := 2026-03-01

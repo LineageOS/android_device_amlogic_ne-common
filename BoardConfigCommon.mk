@@ -4,7 +4,24 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_KERNEL_VERSION := 5.15
+
 COMMON_PATH := device/amlogic/ne-common
+
+# A/B
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_dlkm
+
 
 ## BUILD_BROKEN_*
 # Needed for systemcontrol blobs copy-files to recovery via TARGET_RECOVERY_DEVICE_DIRS
@@ -59,7 +76,7 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 ## Updater
-AB_OTA_UPDATER := false
+AB_OTA_UPDATER := true
 
 ## Vendor SPL
 VENDOR_SECURITY_PATCH := 2024-07-01

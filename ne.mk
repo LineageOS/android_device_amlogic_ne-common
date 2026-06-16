@@ -37,8 +37,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service
 
 ## Camera
@@ -69,13 +69,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
-
-## HDMI CEC
-ifeq ($(PRODUCT_IS_ATV),true)
-PRODUCT_PACKAGES += \
-    android.hardware.tv.cec@1.0-impl \
-    android.hardware.tv.cec@1.0-service
-endif
 
 ## Init-Files
 PRODUCT_COPY_FILES += \
@@ -113,11 +106,6 @@ else
       $(LOCAL_PATH)/init-files/fstab_no_avb.amlogic:$(TARGET_COPY_OUT_RAMDISK)/fstab.amlogic
   endif
 endif
-
-## Media firmware
-PRODUCT_COPY_FILES += \
-    kernel/amlogic/kernel-modules/media-4.9/firmware/h264_enc.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/h264_enc.bin \
-    kernel/amlogic/kernel-modules/media-4.9/firmware/video_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/video_ucode.bin
 
 ## OEM Lock
 ifneq ($(TARGET_HAS_TEE),false)

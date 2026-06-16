@@ -4,6 +4,25 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+## A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
+
 ## Attestation
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.device_unique_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.device_unique_attestation.xml \
@@ -99,7 +118,6 @@ endif
 
 ## Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 ## Platform
 TARGET_AMLOGIC_SOC ?= sc2
@@ -111,16 +129,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Recovery
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot-V1-ndk.recovery \
+    android.hardware.fastboot@1.0.recovery \
+    android.hardware.fastboot@1.1.recovery
+
 ## Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
 ## Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr
+
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)

@@ -84,7 +84,7 @@ else
 endif
 
 ## Vendor SPL
-VENDOR_SECURITY_PATCH := 2024-07-01
+VENDOR_SECURITY_PATCH := 2026-03-01
 
 ## Include the main common tree BoardConfig makefile
 include device/amlogic/common/BoardConfigAmlogic.mk

@@ -31,30 +31,39 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
-BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.boot_devices=ffe07000.emmc use_uvm=1
-TARGET_KERNEL_CONFIG := g12a_defconfig
-TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9
+BOARD_KERNEL_CMDLINE := bootconfig
+BOARD_BOOTCONFIG += androidboot.dynamic_partitions=true
+BOARD_BOOTCONFIG += androidboot.dtbo_idx=0
+BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08c000.mmc
+BOARD_BOOTCONFIG += use_uvm=1
 
-ifeq ($(WITH_CONSOLE),true)
-BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
-endif
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)
 
-## Kernel modules
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/amlogic/kernel-modules
-TARGET_KERNEL_EXT_MODULES += \
-    mali-driver/bifrost \
-    media-4.9
+TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_COPY_FILES += \
+    $(KERNEL_PATH)/gki/Image.lz4:kernel
 
-ifneq ($(TARGET_HAS_TEE),false)
-TARGET_KERNEL_EXT_MODULES += \
-    optee
-endif
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_boot.modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_recovery.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/ramdisk/lib/modules/*.ko)
 
-TARGET_MODULE_ALIASES += \
-    mali_kbase.ko:mali.ko
+# 1. Enable system_dlkm
+BOARD_USES_SYSTEM_DLKMIMAGE := true
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
+BOARD_SYSTEM_KERNEL_MODULES := $(strip $(shell find $(SYSTEM_DLKM_SRC) -type f -name "*.ko"))
+BOARD_SYSTEM_KERNEL_MODULES :=  $(strip $(shell find $(KERNEL_PATH)/gki/lib/modules/ -type f -name "*.ko"))
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/gki/system_dlkm.modules.load))
+
+BOARD_USES_VENDOR_DLKMIMAGE := true
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/lib/modules/*.ko)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm.modules.load))
+
 
 ## Partitions
-SSI_PARTITIONS := product system system_ext
+SSI_PARTITIONS := product system system_ext system_dlkm 
 TREBLE_PARTITIONS := odm vendor vendor_dlkm
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
@@ -71,6 +80,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 ## Recovery
 TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/ne-common/proprietary
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+TARGET_NO_RECOVERY := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT:=true
 
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools

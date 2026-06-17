@@ -1,12 +1,11 @@
 import init.recovery.${ro.product.device}.rc
 
+on early-init
+    insmod /boot/dwc3.ko
+
 on init
     setprop sys.usb.configfs 1
     setprop sys.usb.controller ${vendor.usb.controller}
-
-on fs
-    wait /dev/block/platform/${ro.boot.boot_devices}
-    symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
 
 on post-fs-data
     chown system system /sys/class/android_usb/android0/f_mass_storage/lun/file
@@ -19,8 +18,16 @@ on boot
     write /config/usb_gadget/g1/bcdDevice 0x0223
     write /config/usb_gadget/g1/bcdUSB 0x0200
     write /config/usb_gadget/g1/strings/0x409/manufacturer droidlogic
-    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.board}
+    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.name}
     write /config/usb_gadget/g1/configs/b.1/MaxPower 500
+
+    rm /dev/block/by-name/mmcblk0boot0
+    rm /dev/block/by-name/mmcblk0boot1
+
+    symlink /dev/block/bootloader0 /dev/block/by-name/bootloader_a
+    symlink /dev/block/bootloader1 /dev/block/by-name/bootloader_b
+    symlink /dev/dtb /dev/block/by-name/dt_a
+    symlink /dev/dtb /dev/block/by-name/dt_b
 
 service systemcontrol /system/bin/systemcontrol_static /system/etc/mesondisplay.cfg
     oneshot

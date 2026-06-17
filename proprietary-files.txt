@@ -108,7 +108,7 @@ vendor/etc/init/android.hardware.graphics.allocator-V2-service.rc
 vendor/lib/hw/android.hardware.graphics.allocator-V2-arm.so
 vendor/etc/mesondisplay.cfg
 vendor/etc/mali_platform.config
-vendor/lib/egl/libGLES_mali.so
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so
 vendor/lib/arm.graphics-V4-ndk.so
 vendor/lib/arm.graphics-V5-ndk.so
@@ -237,10 +237,13 @@ vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so
 system_ext/lib/libsubtitlebinder.so
 system_ext/lib/libsubtitlemanager_jni.so
 system_ext/lib/vendor.amlogic.hardware.subtitleserver@1.0.so
+system_ext/lib/libvendorfont.so
 vendor/bin/hw/subtitleserver
 vendor/etc/init/subtitleserver.rc
 vendor/etc/vintf/manifest/vendor.amlogic.hardware.subtitleserver@1.0.xml
-vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so
+vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib/libvendorfont.so;MODULE_SUFFIX=_vendor
+
 
 ## TEE
 vendor/bin/tee-supplicant
@@ -270,9 +273,6 @@ vendor/etc/init/android.hardware.usb-service.rc
 vendor/etc/init/android.hardware.usb.gadget-service.rc
 vendor/etc/vintf/manifest/android.hardware.usb-service.xml
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.xml
-
-## Vulkan
-vendor/lib/hw/vulkan.amlogic.so
 
 ## Wi-Fi
 vendor/etc/wifi/p2p_supplicant.conf

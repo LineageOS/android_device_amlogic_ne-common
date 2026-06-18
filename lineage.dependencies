@@ -2,21 +2,5 @@
   {
     "repository": "android_device_amlogic_common",
     "target_path": "device/amlogic/common"
-  },
-  {
-    "repository": "android_hardware_amlogic_kernel-modules_mali-driver",
-    "target_path": "kernel/amlogic/kernel-modules/mali-driver"
-  },
-  {
-    "repository": "android_hardware_amlogic_kernel-modules_media-5.4",
-    "target_path": "kernel/amlogic/kernel-modules/media-5.4"
-  },
-  {
-    "repository": "android_hardware_amlogic_kernel-modules_optee",
-    "target_path": "kernel/amlogic/kernel-modules/optee"
-  },
-  {
-    "repository": "android_kernel_amlogic_linux-5.4",
-    "target_path": "kernel/amlogic/linux-5.4"
   }
 ]

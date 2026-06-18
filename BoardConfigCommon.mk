@@ -70,7 +70,7 @@ BOARD_SUPER_PARTITION_GROUPS := amlogic_dynamic_partitions
 BUILDING_SUPER_EMPTY_IMAGE := true
 
 ## Properties
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery

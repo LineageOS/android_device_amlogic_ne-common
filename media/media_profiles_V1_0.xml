@@ -2,33 +2,6 @@
 
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <CamcorderProfiles cameraId="0">
-
-        <EncoderProfile quality="1080p" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-            bitRate="8000000"
-            width="1920"
-            height="1080"
-            frameRate="30" />
-
-            <Audio codec="amrwb"
-            bitRate="23050"
-            sampleRate="16000"
-            channels="1" />
-        </EncoderProfile>
-
-        <EncoderProfile quality="timelapse1080p" fileFormat="3gp" duration="60">
-            <Video codec="h264"
-            bitRate="8000000"
-            width="1920"
-            height="1080"
-            frameRate="30" />
-
-            <Audio codec="amrwb"
-            bitRate="23050"
-            sampleRate="16000"
-            channels="1" />
-        </EncoderProfile>
-
         <EncoderProfile quality="720p" fileFormat="3gp" duration="60">
             <Video codec="h264"
             bitRate="6000000"
@@ -236,8 +209,14 @@
 
     <VideoEncoderCap name="h264" enabled="true"
         minBitRate="192000" maxBitRate="6000000"
-        minFrameWidth="176" maxFrameWidth="1920"
-        minFrameHeight="144" maxFrameHeight="1080"
+        minFrameWidth="352" maxFrameWidth="1920"
+        minFrameHeight="288" maxFrameHeight="1080"
+        minFrameRate="5" maxFrameRate="30" />
+
+    <VideoEncoderCap name="hevc" enabled="true"
+        minBitRate="192000" maxBitRate="6000000"
+        minFrameWidth="352" maxFrameWidth="1920"
+        minFrameHeight="288" maxFrameHeight="1080"
         minFrameRate="5" maxFrameRate="30" />
 
     <VideoEncoderCap name="m4v" enabled="true"

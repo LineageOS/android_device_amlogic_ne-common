@@ -92,6 +92,9 @@ else
   endif
 endif
 
+## Kernel
+TARGET_KERNEL_VERSION ?= 5.15
+
 ## Media firmware
 PRODUCT_COPY_FILES += \
     kernel/amlogic/kernel-modules/media-4.9/firmware/h264_enc.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/h264_enc.bin \

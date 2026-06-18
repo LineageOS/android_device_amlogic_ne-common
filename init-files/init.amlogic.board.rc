@@ -1,5 +1,9 @@
+on early-init
+    exec_background u:r:modprobe:s0 -- /system/bin/modprobe -a -d /system_dlkm/lib/modules --all=/system_dlkm/lib/modules/modules.load
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules --all=/vendor/lib/modules/modules.load
+
 on init
-    insmod /vendor/lib/modules/mali_kbase.ko
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mali_kbase
     insmod /oem/overlay/dovi.ko
 
 on early-fs

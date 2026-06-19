@@ -34,7 +34,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libamlaudiohal@7.0.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/lib/hw/audio.primary.amlogic.so': blob_fixup()
-        .replace_needed('android.hardware.bluetooth.audio-V3-ndk.so', 'android.hardware.bluetooth.audio-V5-ndk.so'),
+        .replace_needed('android.hardware.bluetooth.audio-V3-ndk.so', 'android.hardware.bluetooth.audio-V5-ndk.so')
+        .add_needed('libbluetooth_audio_session_aidl_shim.so'),
     (
         'vendor/lib/hw/camera.amlogic.so',
         'vendor/lib/hw/hwcomposer.amlogic.so',

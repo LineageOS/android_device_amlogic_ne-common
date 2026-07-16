@@ -38,28 +38,13 @@ BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08c000.mmc
 BOARD_BOOTCONFIG += use_uvm=1
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)
-
-TARGET_NO_KERNEL_OVERRIDE := true
-PRODUCT_COPY_FILES += \
-    $(KERNEL_PATH)/gki/Image.lz4:kernel
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_boot.modules.load))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_recovery.modules.load))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/ramdisk/lib/modules/*.ko)
 
 # 1. Enable system_dlkm
 BOARD_USES_SYSTEM_DLKMIMAGE := true
 TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
-BOARD_SYSTEM_KERNEL_MODULES := $(strip $(shell find $(SYSTEM_DLKM_SRC) -type f -name "*.ko"))
-BOARD_SYSTEM_KERNEL_MODULES :=  $(strip $(shell find $(KERNEL_PATH)/gki/lib/modules/ -type f -name "*.ko"))
-BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/gki/system_dlkm.modules.load))
 
 BOARD_USES_VENDOR_DLKMIMAGE := true
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/lib/modules/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm.modules.load))
 
 
 ## Partitions

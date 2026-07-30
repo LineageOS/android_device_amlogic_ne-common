@@ -12,6 +12,7 @@ COMMON_PATH := device/amlogic/ne-common
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
+    init_boot \
     odm \
     product \
     system \
@@ -20,6 +21,7 @@ AB_OTA_PARTITIONS += \
     vbmeta \
     vbmeta_system \
     vendor \
+    vendor_boot \
     vendor_dlkm
 
 

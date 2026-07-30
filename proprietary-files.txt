@@ -1,5 +1,5 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
-## are from Amlogic/ohm/ohm:14/UKG3.250513.001/phh06150144:userdebug/test-keys
+## are from onn/jarvis/SNA:14/URO4.260304.011.B1/15051976:user/release-keyss
 
 ## Audio
 vendor/bin/hw/android.hardware.audio.service-droidlogic
@@ -89,9 +89,7 @@ vendor/lib/libge2d-2.0.so
 
 ## Droidlogic
 vendor/etc/permissions/droidlogic.software.core.xml
-vendor/etc/permissions/droidlogic.tv.software.core.xml
 vendor/framework/droidlogic.software.core.jar
-vendor/framework/droidlogic-tv.jar
 
 ## Dumpstate
 vendor/etc/init/dumpstate-default.droidlogic.rc
@@ -150,10 +148,6 @@ vendor/etc/init/sysfs_permissions.rc
 ## Modules
 vendor/bin/modules_load
 vendor/etc/init/modules_load.rc
-
-## Media (Hardware)
-vendor/bin/DecInfo_test
-vendor/bin/esplayer
 
 ## Media
 vendor/lib/libmediahal_dmabufmanage.so
@@ -232,17 +226,6 @@ vendor/lib/libscreencontrol_jni.so
 vendor/lib/libscreencontrolclient.so
 vendor/lib/libscreencontrolservice.so
 vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so
-
-## subtitleserver
-system_ext/lib/libsubtitlebinder.so
-system_ext/lib/libsubtitlemanager_jni.so
-system_ext/lib/vendor.amlogic.hardware.subtitleserver@1.0.so
-system_ext/lib/libvendorfont.so
-vendor/bin/hw/subtitleserver
-vendor/etc/init/subtitleserver.rc
-vendor/etc/vintf/manifest/vendor.amlogic.hardware.subtitleserver@1.0.xml
-vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so;MODULE_SUFFIX=_vendor
-vendor/lib/libvendorfont.so;MODULE_SUFFIX=_vendor
 
 
 ## TEE

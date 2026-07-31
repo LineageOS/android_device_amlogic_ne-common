@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b764bd4d_f62e9a64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-31T15:24:09Z",
+      "side": 1,
+      "message": "thin down to just be system_dlkm, drop prebuilt kernel",
+      "revId": "48ff0a3078594214dd1a286c8bf937fe981440d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36ab17d8_805fde52",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-07-31T17:44:24Z",
+      "side": 1,
+      "message": "modprobe",
+      "revId": "5c6bc46b9ad086518eb319615adc1173e0a4b649",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

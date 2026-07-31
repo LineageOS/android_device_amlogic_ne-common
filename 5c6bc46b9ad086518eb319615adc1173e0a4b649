@@ -16,6 +16,24 @@
       "message": "modprobe",
       "revId": "5c6bc46b9ad086518eb319615adc1173e0a4b649",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86cb2da0_4187bd17",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-31T18:11:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "36ab17d8_805fde52",
+      "revId": "5c6bc46b9ad086518eb319615adc1173e0a4b649",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

@@ -14,19 +14,12 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
-BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true use_uvm=1
-ifeq ($(TARGET_BOOTDEVICE),usb)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ff500000.dwc3
-else ifeq ($(TARGET_BOOTDEVICE),sdcard)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe05000.sd2
-else
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe07000.emmc
-endif
+BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.boot_devices=ffe07000.emmc use_uvm=1
 TARGET_KERNEL_CONFIG := g12a_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9
 
 ifeq ($(WITH_CONSOLE),true)
-  BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
+BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
 endif
 
 ## Kernel modules
@@ -60,11 +53,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
 TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/g12-common/proprietary
-ifneq ($(strip $(TARGET_BOOTDEVICE)),)
-  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.$(TARGET_BOOTDEVICE).amlogic
-else
-  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
-endif
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
 
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools

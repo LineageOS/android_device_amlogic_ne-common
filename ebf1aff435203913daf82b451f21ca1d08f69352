@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "df8388c6_0a5d58f9",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-01T02:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb57b428_cd8da91b",
+      "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "79bf8bbc_46656782",
@@ -53,6 +71,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "83bdbd48_4f2d45e5",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-01T02:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "51a47ae8_4f26f6fd",
+      "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "933ec692_abb7a60d",
@@ -66,6 +102,24 @@
       "writtenOn": "2026-08-01T02:17:54Z",
       "side": 1,
       "message": "spacing",
+      "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "982f5197_947eceaf",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-01T02:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "933ec692_abb7a60d",
       "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }

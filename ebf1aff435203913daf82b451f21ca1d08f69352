@@ -33,6 +33,23 @@
       "message": "Not sure if this is buildable, but it sure is holding some configuration related to the STB",
       "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "933ec692_abb7a60d",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-01T02:17:54Z",
+      "side": 1,
+      "message": "spacing",
+      "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

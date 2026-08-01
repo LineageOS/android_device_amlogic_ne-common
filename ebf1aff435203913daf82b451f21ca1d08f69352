@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "51a47ae8_4f26f6fd",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-08-01T02:23:22Z",
+      "side": 1,
+      "message": "Yes it holds permanent configuration and not intended for change. It in this list  to flash as ab, not for buil. In current kvim1s tree odm_ext.img is prebuilt from vendor. Need to test if it could be omited from flash.",
+      "parentUuid": "79bf8bbc_46656782",
+      "revId": "ebf1aff435203913daf82b451f21ca1d08f69352",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "933ec692_abb7a60d",
         "filename": "BoardConfigCommon.mk",
         "patchSetId": 11

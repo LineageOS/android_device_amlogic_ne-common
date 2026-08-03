@@ -136,12 +136,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Recovery
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot-V1-ndk.recovery \
-    android.hardware.fastboot@1.0.recovery \
-    android.hardware.fastboot@1.1.recovery
-
 ## Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 31
 

@@ -107,6 +107,9 @@ ro.vendor.platform.has.tuner=0
 #ro.vendor.sdr2hdr.enable=true
 vendor.afbcd.enable=1
 
+## NRDP
+ro.vendor.nrdp.validation=ninja_10
+
 ## OMX
 ro.vendor.platform.is.dualspdif=true
 ro.vendor.platform.support.av1=true

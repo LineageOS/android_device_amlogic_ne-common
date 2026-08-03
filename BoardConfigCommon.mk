@@ -45,21 +45,16 @@ else
 endif
 
 BOARD_USES_ODM_DLKMIMAGE := true
-TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
-
 BOARD_USES_SYSTEM_DLKMIMAGE := true
-TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
-
 BOARD_USES_VENDOR_DLKMIMAGE := true
-TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 TARGET_KERNEL_VERSION ?= 5.15
 
 ## Partitions
-SSI_PARTITIONS := product system system_ext system_dlkm
-TREBLE_PARTITIONS := odm odm_dlkm vendor vendor_dlkm
+SSI_PARTITIONS := product system system_ext
+TREBLE_PARTITIONS := odm odm_dlkm system_dlkm vendor vendor_dlkm
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
 BOARD_AMLOGIC_DYNAMIC_PARTITIONS_PARTITION_LIST := $(ALL_PARTITIONS)

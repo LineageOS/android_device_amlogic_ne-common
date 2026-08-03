@@ -1,12 +1,12 @@
 ## Dynamic partitions
-odm                                                     /odm                 ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb
-odm_dlkm                                                /odm_dlkm            ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb
+odm                                                     /odm                 erofs   ro                                                                           wait,slotselect,logical,first_stage_mount,avb
+odm_dlkm                                                /odm_dlkm            erofs   ro                                                                           wait,slotselect,logical,first_stage_mount,avb
 product                                                 /product             ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb
 system                                                  /system              ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb=vbmeta_system,avb_keys=/avb
-system_dlkm                                             /system_dlkm         ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb=vbmeta_system,avb_keys=/avb
+system_dlkm                                             /system_dlkm         erofs   ro                                                                           wait,slotselect,logical,first_stage_mount,avb=vbmeta_system,avb_keys=/avb
 system_ext                                              /system_ext          ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb=vbmeta_system
-vendor                                                  /vendor              ext4    ro,barrier=1                                                                 wait,slotselect,logical,first_stage_mount,avb=vbmeta
-vendor_dlkm                                             /vendor_dlkm         ext4    noatime,ro,errors=panic                                                      wait,slotselect,logical,first_stage_mount,avb
+vendor                                                  /vendor              erofs   ro                                                                           wait,slotselect,logical,first_stage_mount,avb=vbmeta
+vendor_dlkm                                             /vendor_dlkm         erofs   ro                                                                           wait,slotselect,logical,first_stage_mount,avb
 
 ## Block devices
 /dev/block/by-name/factory                              /mnt/vendor/factory  vfat    noatime,nodiratime,nosuid,noexec,dmask=0022                                  wait,check

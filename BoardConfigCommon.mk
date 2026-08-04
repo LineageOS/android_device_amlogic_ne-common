@@ -6,7 +6,7 @@
 COMMON_PATH := device/amlogic/ne-common
 
 ## Architecture
-TARGET_CPU_VARIANT_RUNTIME := cortex-a53
+TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
 ## BUILD_BROKEN_*
 # Needed for systemcontrol blobs copy-files to recovery via TARGET_RECOVERY_DEVICE_DIRS

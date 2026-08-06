@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "577b896d_9a59b287",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 28
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-06T22:31:00Z",
+      "side": 1,
+      "message": "Why is this put alone?",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 8
+      },
+      "revId": "596ab2da8cc1f4d3522795d70c91e1db0cb05f51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

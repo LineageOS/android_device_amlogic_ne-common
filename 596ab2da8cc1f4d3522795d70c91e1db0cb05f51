@@ -22,6 +22,30 @@
       },
       "revId": "596ab2da8cc1f4d3522795d70c91e1db0cb05f51",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b948a34f_77215198",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 28
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-06T22:41:02Z",
+      "side": 1,
+      "message": "miseed this comment by minutes sadly.\n\nIt\u0027s sorted that way as it was changed originally, no longer is, will re-sort in follow up.",
+      "parentUuid": "577b896d_9a59b287",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 8
+      },
+      "revId": "596ab2da8cc1f4d3522795d70c91e1db0cb05f51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [

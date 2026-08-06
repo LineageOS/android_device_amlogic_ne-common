@@ -9,6 +9,7 @@ vendor/lib/libAmlAudioOutPort.so
 vendor/lib/libamaudioutils.so
 vendor/lib/libamaudioutils_boot.so
 vendor/lib/libamladecs.so
+vendor/lib/libamlaudiohal.7.0.so
 vendor/lib/libamlaudiohal@7.0.so
 vendor/lib/libamlaudiohal_deathhandler@7.0.so
 vendor/lib/libamlmediautils@7.0.so
@@ -22,9 +23,6 @@ vendor/lib/libmad.so
 vendor/lib/libms12api_v24.so
 vendor/lib/libnano.so
 vendor/lib/libsonic_ext.so
-
-## Audio
-vendor/lib/libamlaudiohal.7.0.so
 
 ## Audio Effects
 vendor/lib/soundfx/libbalance.so

@@ -34,6 +34,8 @@ on boot
     symlink /dev/block/bootloader1 /dev/block/by-name/bootloader_b
     symlink /dev/dtb /dev/block/by-name/dt_a
     symlink /dev/dtb /dev/block/by-name/dt_b
+    symlink /dev/platform/soc/fe08c000.mmc/by-name/logo /dev/block/by-name/logo_a
+    symlink /dev/platform/soc/fe08c000.mmc/by-name/logo /dev/block/by-name/logo_b
 
 service systemcontrol /system/bin/systemcontrol_static /system/etc/mesondisplay.cfg
     oneshot

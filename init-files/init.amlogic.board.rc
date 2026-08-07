@@ -21,6 +21,11 @@ on boot
     write /proc/sys/net/core/rps_sock_flow_entries 32768
     write  /sys/class/net/eth0/queues/rx-0/rps_flow_cnt 32768
 
+    symlink /dev/dtb /dev/block/by-name/dt_a
+    symlink /dev/dtb /dev/block/by-name/dt_b
+    symlink /dev/logo /dev/block/by-name/logo_a
+    symlink /dev/logo /dev/block/by-name/logo_b
+
 on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 1000000

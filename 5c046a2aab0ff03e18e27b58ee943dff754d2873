@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "43b617d4_8b0b0188",
+        "filename": "vendor.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-08T10:11:56Z",
+      "side": 1,
+      "message": "Pick this instead: https://review.lineageos.org/q/I83b28e6ec0217c49763a407fad1bc8c154e923ab",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 138,
+        "endChar": 22
+      },
+      "revId": "5c046a2aab0ff03e18e27b58ee943dff754d2873",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "070e9bd1_dcb72db4",
         "filename": "vendor.prop",
         "patchSetId": 1

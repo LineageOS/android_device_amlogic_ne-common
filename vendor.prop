@@ -128,6 +128,18 @@ vendor.tv.dtv.tf.disable=false
 vendor.media.audio.syncshow=1
 ro.vendor.platform.is.dualspdif=true
 ro.vendor.platform.support.av1=true
+<<<<<<< Updated upstream
+=======
+vendor.media.audio.syncshow=1
+vendor.media.support.mvc=true
+vendor.tv.dtv.tf.disable=false
+
+## Power
+vendor.powerhal.init=1
+
+## Screen Control
+ro.vendor.screencontrol.maxbufsize=104857600
+>>>>>>> Stashed changes
 
 ## USB
 vendor.usb.controller=fdd00000.dwc2_a

@@ -22,6 +22,30 @@
       },
       "revId": "596ab2da8cc1f4d3522795d70c91e1db0cb05f51",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbc8bdc0_8e467d8e",
+        "filename": "init-files/init.amlogic.system.rc",
+        "patchSetId": 41
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-10T00:14:27Z",
+      "side": 0,
+      "message": "Nope!\n\nnolenjohnson@ODS-PROD:~/lineage-24/vendor/amlogic/ne-common$ grep -r swapon_all\nproprietary/vendor/etc/init/fs.rc:    swapon_all /vendor/etc/fstab.amlogic",
+      "parentUuid": "16ce714b_7be5bf73",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 40
+      },
+      "revId": "596ab2da8cc1f4d3522795d70c91e1db0cb05f51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

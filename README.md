@@ -1,5 +1,9 @@
+```
+#
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
+#
+```
 
 A common tree for the following SoC's:
 * S4 - S905Y4 & S805X2(g) & S905W2

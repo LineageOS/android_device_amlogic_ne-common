@@ -1,5 +1,29 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14ff7d59_577864c6",
+        "filename": "init-files/init.recovery.amlogic.rc",
+        "patchSetId": 41
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-08-17T15:17:38Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 28,
+        "startChar": 11,
+        "endLine": 28,
+        "endChar": 13
+      },
+      "revId": "2a7406077274d71f6856c939513ddb2b010854a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {

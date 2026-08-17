@@ -22,6 +22,30 @@
       },
       "revId": "2a7406077274d71f6856c939513ddb2b010854a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01182d33_7b46ef54",
+        "filename": "init-files/init.recovery.amlogic.rc",
+        "patchSetId": 41
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-17T16:44:49Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/I35afd6f778b2c6c4be8f7e961fae81de7691a2c1",
+      "parentUuid": "14ff7d59_577864c6",
+      "range": {
+        "startLine": 28,
+        "startChar": 11,
+        "endLine": 28,
+        "endChar": 13
+      },
+      "revId": "2a7406077274d71f6856c939513ddb2b010854a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [

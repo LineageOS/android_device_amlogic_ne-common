@@ -117,6 +117,10 @@ else
   endif
 endif
 
+# Linker
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/configs/linker.config.json
+
 ## OEM Lock
 ifneq ($(TARGET_HAS_TEE),false)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

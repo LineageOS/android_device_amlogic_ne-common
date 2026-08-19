@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4fdc59e0_e7f4c560",
+        "filename": "ne.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-19T09:37:06Z",
+      "side": 1,
+      "message": "Before this",
+      "revId": "2c0d10160f96c9035b20fa02665917ea19e1272f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

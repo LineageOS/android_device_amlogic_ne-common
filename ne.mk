@@ -90,6 +90,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi.rc \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc
 
+# Linker
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/configs/linker.config.json
+
 # Support both AVB/Non-AVB variants of multiple boot mediums (default to eMMC)
 ifneq ($(TARGET_HAS_TEE),false)
   ifneq ($(strip $(TARGET_BOOTDEVICE)),)

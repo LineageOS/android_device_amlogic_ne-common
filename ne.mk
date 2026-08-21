@@ -159,6 +159,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+## VINTF
+DEVICE_MANIFEST_FILE += device/amlogic/ne-common/manifest.xml
+
+ifneq ($(BOARD_HAVE_BLUETOOTH),false)
+DEVICE_MANIFEST_FILE += device/amlogic/ne-common/manifest_bt.xml
+endif
+
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)
 

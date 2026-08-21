@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8390ab3c_680ba7b0",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-21T19:57:13Z",
+      "side": 1,
+      "message": "we don\u0027t have this? afaik?",
+      "revId": "737f0d03d88931dcd530356fe9e03d31eadda2e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

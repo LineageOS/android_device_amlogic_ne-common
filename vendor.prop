@@ -95,9 +95,6 @@ ro.vendor.platform.has.realoutputmode=true
 ro.vendor.platform.need.display.hdmicec=true
 vendor.tv.dtv.fake_pid=0x2fff
 
-## Logging
-log.tag.HDMI=DEBUG
-
 ## Media
 persist.sys.media.avsync=true
 persist.vendor.media.bootvideo=0050

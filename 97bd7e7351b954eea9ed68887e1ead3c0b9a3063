@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4da785c5_85a42e04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-21T20:28:14Z",
+      "side": 1,
+      "message": "ne uses aidl android.hardware.tv.hdmi.cec (from vendor/etc/vintf/manifest/android.hardware.tv.hdmi.cec-service.droidlogic.xml)",
+      "revId": "97bd7e7351b954eea9ed68887e1ead3c0b9a3063",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

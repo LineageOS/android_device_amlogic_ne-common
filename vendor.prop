@@ -122,6 +122,3 @@ ro.vendor.screencontrol.maxbufsize=104857600
 
 ## USB
 vendor.usb.controller=fdd00000.dwc2_a
-
-## Wi-Fi
-wifi.direct.interface=p2p0

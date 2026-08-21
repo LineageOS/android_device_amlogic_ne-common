@@ -34,6 +34,24 @@
       "parentUuid": "8390ab3c_680ba7b0",
       "revId": "737f0d03d88931dcd530356fe9e03d31eadda2e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c858378_82133943",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-21T20:01:57Z",
+      "side": 1,
+      "message": "Seems legit.",
+      "parentUuid": "5e10e458_ac0d218d",
+      "revId": "737f0d03d88931dcd530356fe9e03d31eadda2e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

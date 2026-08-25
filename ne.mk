@@ -39,7 +39,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service
+    android.hardware.audio.service \
+    tinymix
 
 ## Camera
 PRODUCT_PACKAGES += \
@@ -89,6 +90,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.usb.rc \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi.rc \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init-files/init.amlogic.audio.spk_mute.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.amlogic.audio.spk_mute.sh
 
 # Support both AVB/Non-AVB variants of multiple boot mediums (default to eMMC)
 ifneq ($(TARGET_HAS_TEE),false)

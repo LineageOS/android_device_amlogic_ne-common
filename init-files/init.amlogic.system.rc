@@ -100,6 +100,16 @@ service bugreport /system/bin/dumpstate -d -p -B -z \
     disabled
     oneshot
 
+service spk_mute /vendor/bin/init.amlogic.audio.spk_mute.sh
+    class late_start
+    user audioserver
+    group audio
+    oneshot
+    disabled
+
+on property:init.svc.audioserver=running
+    start spk_mute
+
 on property:sys.boot_completed=1
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1

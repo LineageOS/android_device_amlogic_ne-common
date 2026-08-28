@@ -43,10 +43,6 @@ else
   BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08c000.mmc
 endif
 
-BOARD_USES_ODM_DLKMIMAGE := true
-BOARD_USES_SYSTEM_DLKMIMAGE := true
-BOARD_USES_VENDOR_DLKMIMAGE := true
-
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 ## Partitions

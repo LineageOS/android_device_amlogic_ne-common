@@ -49,8 +49,6 @@ BOARD_USES_VENDOR_DLKMIMAGE := true
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-TARGET_KERNEL_VERSION ?= 5.15
-
 ## Partitions
 SSI_PARTITIONS := product system system_ext
 TREBLE_PARTITIONS := odm odm_dlkm system_dlkm vendor vendor_dlkm

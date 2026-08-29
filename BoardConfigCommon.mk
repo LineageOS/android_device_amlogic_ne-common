@@ -66,9 +66,9 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/ne-common/proprietary
 ifneq ($(strip $(TARGET_BOOTDEVICE)),)
-  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.$(TARGET_BOOTDEVICE).amlogic
+  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.$(TARGET_BOOTDEVICE).amlogic
 else
-  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/fstab.amlogic
+  TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.amlogic
 endif
 
 ## Vendor SPL

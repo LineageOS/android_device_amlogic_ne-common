@@ -43,9 +43,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/libscreencontrolservice.so'
     ): blob_fixup()
         .add_needed('libui_shim.so'),
-    ('vendor/etc/init/fs.rc'): blob_fixup()
-        .regex_replace('    mkdir /data/media 0770 media_rw media_rw encryption=None\n', '')
-        .regex_replace('    setprop ro.crypto.fuse_sdcard true\n', ''),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

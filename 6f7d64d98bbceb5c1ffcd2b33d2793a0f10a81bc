@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71765a8d_b038e4d9",
+        "filename": "ne.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-29T15:33:20Z",
+      "side": 1,
+      "message": "Whatch out for this. Make sure it\u0027s ending up in the proper place. In g12 it goes to ramdisk, but here we have vendor_boot.",
+      "revId": "6f7d64d98bbceb5c1ffcd2b33d2793a0f10a81bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

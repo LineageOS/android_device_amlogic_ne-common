@@ -32,9 +32,9 @@ PRODUCT_COPY_FILES +=  \
 
 ## Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
@@ -55,20 +55,20 @@ PRODUCT_PACKAGES += \
 
 ## Codecs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_audio_ddp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_ddp.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_audio_dts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_dts.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_audio_dtshd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_dtshd.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_audio_ffmpeg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_ffmpeg.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_encoder.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_encoder.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_performance_encoder.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_performance_encoder.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_performance_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_performance_video.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_video_ext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_video_ext.xml \
-    $(LOCAL_PATH)/media/media_codecs_amlogic_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_video.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_audio_ddp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_ddp.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_audio_dts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_dts.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_audio_dtshd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_dtshd.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_audio_ffmpeg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio_ffmpeg.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_audio.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_encoder.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_encoder.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_performance_encoder.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_performance_encoder.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_performance_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_performance_video.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_video_ext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_video_ext.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_amlogic_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_amlogic_video.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
 
 ## Graphics
 PRODUCT_COPY_FILES += \
@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
 
 ## Linker
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
-    $(LOCAL_PATH)/configs/linker.config.json
+    $(LOCAL_PATH)/configs/linker/linker.config.json
 
 ## OEM Lock
 ifneq ($(TARGET_HAS_TEE),false)
@@ -116,7 +116,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 ## Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 31

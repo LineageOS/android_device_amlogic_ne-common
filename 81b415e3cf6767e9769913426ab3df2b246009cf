@@ -16,6 +16,24 @@
       "message": "Build and booted on DV9135 (refboard based on oppen)",
       "revId": "81b415e3cf6767e9769913426ab3df2b246009cf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cccea4ac_54fd27e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-30T16:41:01Z",
+      "side": 1,
+      "message": "(default fstab)",
+      "parentUuid": "b9d42203_9e71c570",
+      "revId": "81b415e3cf6767e9769913426ab3df2b246009cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

@@ -66,7 +66,6 @@ TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/ne-common/proprietary

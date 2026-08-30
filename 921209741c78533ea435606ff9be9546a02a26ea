@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54a2e000_f24e6b39",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-30T04:13:32Z",
+      "side": 1,
+      "message": "Had to change this",
+      "revId": "921209741c78533ea435606ff9be9546a02a26ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

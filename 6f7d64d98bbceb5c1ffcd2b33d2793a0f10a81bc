@@ -16,6 +16,24 @@
       "message": "Whatch out for this. Make sure it\u0027s ending up in the proper place. In g12 it goes to ramdisk, but here we have vendor_boot.",
       "revId": "6f7d64d98bbceb5c1ffcd2b33d2793a0f10a81bc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3acc0d80_467f31dd",
+        "filename": "ne.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-30T16:51:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71765a8d_b038e4d9",
+      "revId": "6f7d64d98bbceb5c1ffcd2b33d2793a0f10a81bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

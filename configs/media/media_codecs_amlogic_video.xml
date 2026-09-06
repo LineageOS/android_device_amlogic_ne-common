@@ -195,18 +195,6 @@ Only the three quirks included above are recognized at this point:
             <Feature name="tunneled-playback" />
             <Limit name="concurrent-instances" max="9" />
         </MediaCodec>
-        <MediaCodec name="c2.amlogic.mpeg2.decoder.secure" type="video/mpeg2" >
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="size" min="96x96" max="1920x1920" />
-            <Limit name="block-count" range="1-8160" /> <!-- max 1920x1088 -->
-            <Limit name="blocks-per-second" min="1" max="489600" />
-            <Limit name="bitrate" range="1-300000000" />
-            <Feature name="adaptive-playback" />
-            <Feature name="tunneled-playback" />
-            <Feature name="secure-playback" required="true" />
-            <Limit name="concurrent-instances" max="2" />
-        </MediaCodec>
         <MediaCodec name="c2.amlogic.mjpeg.decoder" type="video/x-motion-jpeg">
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />

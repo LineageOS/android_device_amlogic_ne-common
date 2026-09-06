@@ -15,12 +15,12 @@
 -->
 
 <MediaCodecs>
-        <!-- amlogic encoder-->
-        <Include href="media_codecs_amlogic_performance_encoder.xml"/>
-        <!-- dolby vision decoder-->
-        <Include href="media_codecs_amlogic_performance_dolby_vision.xml"/>
-        <!-- amlogic decoder-->
-        <Include href="media_codecs_amlogic_performance_video.xml"/>
-        <!-- google decoder-->
-        <Include href="media_codecs_google_performance_video.xml"/>
+    <!-- amlogic encoder-->
+    <Include href="media_codecs_amlogic_performance_encoder.xml"/>
+    <!-- dolby vision decoder-->
+    <Include href="media_codecs_amlogic_performance_dolby_vision.xml"/>
+    <!-- amlogic decoder-->
+    <Include href="media_codecs_amlogic_performance_video.xml"/>
+    <!-- google decoder-->
+    <Include href="media_codecs_google_performance_video.xml"/>
 </MediaCodecs>

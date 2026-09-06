@@ -87,12 +87,9 @@
         <MediaCodec name="c2.amlogic.vc1.decoder" type="video/vc1" update="true">
             <Limit name="performance-point-1920x1080" range="60-60" />
         </MediaCodec>
-        <MediaCodec name="c2.amlogic.wvc1.decoder" type="video/wvc1" update="true">
-            <Limit name="performance-point-1920x1080" range="60-60" />
-        </MediaCodec>
         <MediaCodec name="c2.amlogic.h263.decoder.sw" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="420-420" />
-            <Limit name="measured-frame-rate-352x288" range="329-329" />
+            <Limit name="measured-frame-rate-176x144" range="594-595" />
+            <Limit name="measured-frame-rate-352x288" range="407-407" />
             <Limit name="performance-point-1920x1080" range="60-60" />
         </MediaCodec>
         <MediaCodec name="c2.amlogic.rm10.decoder.sw" type="video/rm10" update="true">
@@ -117,11 +114,11 @@
             <Limit name="performance-point-1920x1080" range="60-60" />
         </MediaCodec>
         <MediaCodec name="c2.amlogic.vp8.decoder.sw" type="video/x-vnd.on2.vp8" update="true">
-            <Limit name="measured-frame-rate-320x180" range="270-270" />
-            <Limit name="measured-frame-rate-640x360" range="226-228" />
-            <Limit name="measured-frame-rate-1280x720" range="106-106" />
-            <Limit name="measured-frame-rate-1920x1080" range="50-51" />
-            <Limit name="performance-point-1920x1080" range="60-60" />
+            <Limit name="measured-frame-rate-320x180" range="501-504" />
+            <Limit name="measured-frame-rate-640x360" range="150-150" />
+            <Limit name="measured-frame-rate-1280x720" range="101-102" />
+            <Limit name="measured-frame-rate-1920x1080" range="44-45" />
+            <Limit name="performance-point-1920x1080" range="30-30" />
         </MediaCodec>
         <MediaCodec name="c2.amlogic.wmv1.decoder.sw" type="video/wmv1" update="true">
             <Limit name="performance-point-1920x1080" range="60-60" />

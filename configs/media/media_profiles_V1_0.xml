@@ -209,14 +209,8 @@
 
     <VideoEncoderCap name="h264" enabled="true"
         minBitRate="192000" maxBitRate="6000000"
-        minFrameWidth="352" maxFrameWidth="1920"
-        minFrameHeight="288" maxFrameHeight="1080"
-        minFrameRate="5" maxFrameRate="30" />
-
-    <VideoEncoderCap name="hevc" enabled="true"
-        minBitRate="192000" maxBitRate="6000000"
-        minFrameWidth="352" maxFrameWidth="1920"
-        minFrameHeight="288" maxFrameHeight="1080"
+        minFrameWidth="176" maxFrameWidth="1920"
+        minFrameHeight="144" maxFrameHeight="1080"
         minFrameRate="5" maxFrameRate="30" />
 
     <VideoEncoderCap name="m4v" enabled="true"

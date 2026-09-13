@@ -43,6 +43,11 @@ else
   BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fe08c000.mmc
 endif
 
+ifeq ($(WITH_CONSOLE),true)
+  BOARD_BOOTCONFIG += console=ttyS0,921600 no_console_suspend ignore_loglevel
+  BOARD_BOOTCONFIG += earlycon=aml_uart,0xfe07a000
+endif
+
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 TARGET_KERNEL_VERSION ?= 5.15

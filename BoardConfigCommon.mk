@@ -46,6 +46,8 @@ endif
 ifeq ($(WITH_CONSOLE),true)
   BOARD_BOOTCONFIG += console=ttyS0,921600 no_console_suspend ignore_loglevel
   BOARD_BOOTCONFIG += earlycon=aml_uart,0xfe07a000
+else
+  BOARD_BOOTCONFIG += console=null
 endif
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true

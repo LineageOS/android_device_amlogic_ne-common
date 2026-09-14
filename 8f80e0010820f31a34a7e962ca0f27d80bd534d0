@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d252f4a_9edd8528",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-14T00:44:44Z",
+      "side": 1,
+      "message": "From Xiaomi TV Box S Gen2 (jaws) dump:\n\n\u003e  ## NRDP\n\u003e  ro.vendor.nrdp.modelgroup\u003djaws\n\u003e  ro.vendor.nrdp.validation\u003dninja_8",
+      "revId": "8f80e0010820f31a34a7e962ca0f27d80bd534d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

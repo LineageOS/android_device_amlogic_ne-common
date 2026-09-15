@@ -50,6 +50,10 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 TARGET_KERNEL_VERSION ?= 5.15
 
+## Kernel modules
+BOARD_VENDOR_KERNEL_MODULES += \
+    vendor/amlogic/ne-common/proprietary/vendor_dlkm/lib/modules/amlogic_fbc_lib.ko
+
 ## Partitions
 SSI_PARTITIONS := product system system_ext
 TREBLE_PARTITIONS := odm odm_dlkm system_dlkm vendor vendor_dlkm

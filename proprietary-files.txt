@@ -51,18 +51,18 @@ vendor/lib/hw/camera.amlogic.so
 
 ## Common
 vendor/bin/ddrtest.sh
+vendor/etc/permissions/android.software.cant_save_state.xml
 vendor/etc/lowmemorykiller.txt
 vendor/etc/lowmemorykiller_2G.txt
 vendor/etc/lowmemorykiller_512M.txt
-vendor/etc/permissions/android.software.cant_save_state.xml
 
 ## Composer
 vendor/bin/hw/android.hardware.graphics.composer@3.2-service.droidlogic
 vendor/etc/init/android.hardware.graphics.composer@3.2-service.droidlogic.rc
 vendor/etc/vintf/manifest/android.hardware.graphics.composer@3.2-service.droidlogic.xml
+vendor/lib/hw/hwcomposer.amlogic.so
 vendor/lib/android.hardware.graphics.composer@2.1-resources-aidl.so
 vendor/lib/android.hardware.graphics.composer@2.2-resources-aidl.so
-vendor/lib/hw/hwcomposer.amlogic.so
 vendor/lib/liberrormonitorclient.so
 vendor/lib/libmeson_display_adapter_remote.so
 vendor/lib/libmeson_display_service.so
@@ -105,16 +105,16 @@ vendor/etc/gralloc/dpu_aeu.xml
 vendor/etc/gralloc/gpu.xml
 vendor/etc/gralloc/vpu.xml
 vendor/etc/init/android.hardware.graphics.allocator-V2-service.rc
-vendor/etc/mali_platform.config
 vendor/etc/vintf/manifest/manifest_allocator.xml
 vendor/etc/vintf/manifest/manifest_mapper.xml
 vendor/etc/vintf/manifest/mapper.arm.xml
-vendor/lib/arm.graphics-V4-ndk.so
-vendor/lib/arm.graphics-V5-ndk.so
+vendor/etc/mali_platform.config
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so
 vendor/lib/hw/android.hardware.graphics.allocator-V2-arm.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so
 vendor/lib/hw/mapper.arm.so
+vendor/lib/arm.graphics-V4-ndk.so
+vendor/lib/arm.graphics-V5-ndk.so
 vendor/lib/libamgralloc_ext.so
 
 ## Gatekeeper
@@ -239,8 +239,8 @@ vendor/etc/init/tee_key_inject.rc
 ## Thermal
 vendor/bin/hw/android.hardware.thermal-service.droidlogic
 vendor/etc/init/thermal.rc
-vendor/etc/thermal_info_config.json
 vendor/etc/vintf/manifest/thermal.xml
+vendor/etc/thermal_info_config.json
 
 ## USB
 vendor/bin/hw/android.hardware.usb-service.droidlogic

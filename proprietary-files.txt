@@ -33,14 +33,6 @@ vendor/lib/soundfx/libtreblebasswrapper.so
 vendor/lib/soundfx/libvirtualsurround.so
 vendor/lib/soundfx/libvirtualx.so
 
-## Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.1-service-droidlogic
-vendor/etc/bluetooth/auto_pairing.conf
-vendor/etc/bluetooth/blacklist.conf
-vendor/etc/bluetooth/bt_vendor.conf
-vendor/etc/bluetooth/bt_vendor_usb.conf
-vendor/etc/init/android.hardware.bluetooth@1.1-service-droidlogic.rc
-
 ## Boot
 vendor/bin/hw/android.hardware.boot-service
 vendor/etc/init/android.hardware.boot-service.droidlogic.rc

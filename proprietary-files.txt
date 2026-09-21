@@ -6,7 +6,9 @@ vendor/etc/permissions/android.software.cant_save_state.xml
 
 ## Audio
 vendor/bin/hw/android.hardware.audio.service-droidlogic
+vendor/bin/dolby_fw_dolbyms12
 vendor/etc/init/android.hardware.audio.service-droidlogic.rc
+vendor/etc/init/oem_license.rc:vendor/etc/init/dolby_fw_dolbyms12.rc
 vendor/lib/hw/audio.primary.amlogic.so
 vendor/lib/libAmlAudioOutPort.so
 vendor/lib/libamaudioutils.so

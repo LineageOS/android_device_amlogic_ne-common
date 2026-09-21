@@ -27,6 +27,10 @@ vendor/lib/libms12api_v24.so
 vendor/lib/libnano.so
 vendor/lib/libsonic_ext.so
 
+## Audio (Dolby MS12)
+vendor/bin/dolby_fw_dolbyms12
+vendor/etc/init/oem_license.rc:vendor/etc/init/dolby_fw_dolbyms12.rc
+
 ## Audio Effects
 vendor/lib/soundfx/libbalance.so
 vendor/lib/soundfx/libdpe.so

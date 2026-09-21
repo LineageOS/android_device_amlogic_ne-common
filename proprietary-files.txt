@@ -27,6 +27,10 @@ vendor/lib/libms12api_v24.so
 vendor/lib/libnano.so
 vendor/lib/libsonic_ext.so
 
+## Audio Codecs
+odm/etc/ms12/libdolbyms12.so:vendor/lib/ms12/libdolbyms12.so;MAKE_COPY_RULE_ONLY;SYMLINK=vendor/lib/libdolbyms12.so
+vendor/bin/dolby_fw_dolbyms12
+
 ## Audio Effects
 vendor/lib/soundfx/libbalance.so
 vendor/lib/soundfx/libdpe.so

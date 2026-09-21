@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
     media_codecs_amlogic_audio_ac4.xml_symlink \
     media_codecs_amlogic_audio_ddp.xml_symlink \
     media_codecs_amlogic_dolby_vision.xml_symlink \
-    media_codecs_amlogic_performance_dolby_vision.xml_symlink
+    media_codecs_amlogic_performance_dolby_vision.xml_symlink \
+    oem_license.rc
 
 ## GMS
 ifeq ($(WITH_GMS),true)

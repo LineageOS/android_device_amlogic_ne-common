@@ -1,0 +1,27 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    wait /dev/audio_utils
+    wait /dev/dolby_fw 2
+    wait /vendor/lib/ms12 2
+
+on post-fs
+    # Dolby MS12 ships encrypted on the oem partition and can only be decrypted on the box itself,
+    # through /dev/dolby_fw. The OEM's put it in /odm/lib/ms12, but the audio HAL might refuse that
+    # MS12 version and drop every write. In /vendor/lib/ms12 the Codec2 decoders use it, and the
+    # library's own security check reads it back through /vendor/lib/libdolbyms12.so.
+    mount tmpfs tmpfs /vendor/lib/ms12 mode=0755,size=10m,context=u:object_r:dolby_ms12_tmpfs:s0
+    exec - root root -- /vendor/bin/dolby_fw_dolbyms12 /oem/lib/ms12/libdolbyms12.so /vendor/lib/ms12/libdolbyms12.so
+    chmod 0644 /vendor/lib/ms12/libdolbyms12.so
+    mount tmpfs tmpfs /vendor/lib/ms12 remount ro
+
+    # Changing access permission of the dev node used by android.hardware.audio.service-droidlogic
+    chown audioserver mediadrm /dev/audio_utils
+    chmod 0644 /dev/audio_utils
+
+    # Changing access permission of the dev node used by libdolbyms12
+    chown audioserver mediadrm /dev/dolby_fw
+    chmod 0440 /dev/dolby_fw

@@ -63,3 +63,10 @@ prebuilt_etc {
     sub_dir: "init",
     recovery: true,
 }
+
+prebuilt_etc {
+    name: "oem_license.rc",
+    src: "oem_license.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}

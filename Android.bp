@@ -3,4 +3,11 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_namespace {}
+soong_namespace {
+}
+
+mkdir {
+    name: "odm_ms12_mountpoint",
+    dir: "lib/ms12",
+    device_specific: true,
+}

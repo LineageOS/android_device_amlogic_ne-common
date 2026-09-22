@@ -5,17 +5,10 @@
 
 prebuilt_etc {
     name: "fstab.amlogic",
-    src: select((
-        soong_config_variable("amlogic_fstab", "bootdevice"),
-        soong_config_variable("amlogic_fstab", "with_tee"),
-    ), {
-        ("sdcard", "false"): "fstab_no_avb.sdcard.amlogic",
-        ("usb", "false"): "fstab_no_avb.usb.amlogic",
-        (default, "false"): "fstab_no_avb.amlogic",
-
-        ("sdcard", default): "fstab.sdcard.amlogic",
-        ("usb", default): "fstab.usb.amlogic",
-        (default, default): "fstab.amlogic",
+    src: select(soong_config_variable("amlogic_fstab", "bootdevice"), {
+        "sdcard": "fstab.sdcard.amlogic",
+        "usb": "fstab.usb.amlogic",
+        default: "fstab.amlogic",
     }),
     filename: "fstab.amlogic",
     soc_specific: true,

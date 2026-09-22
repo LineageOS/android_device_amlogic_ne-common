@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
 
 ## Init
 $(call soong_config_set,amlogic_fstab,bootdevice,$(TARGET_BOOTDEVICE))
-$(call soong_config_set,amlogic_fstab,with_tee,$(TARGET_HAS_TEE))
 
 PRODUCT_PACKAGES += \
     fstab.amlogic \

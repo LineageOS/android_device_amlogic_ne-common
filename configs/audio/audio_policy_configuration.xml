@@ -14,7 +14,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
     -->
-    <globalConfiguration speaker_drc_enabled="false" engine_library="configurable" />
+    <globalConfiguration speaker_drc_enabled="false" />
     <modules>
         <module name="primary" halVersion="3.0">
             <attachedDevices>
@@ -158,7 +158,8 @@
         <ns0:include href="r_submix_audio_policy_configuration.xml" />
         <ns0:include href="bluetooth_audio_policy_configuration_7_0.xml" />
     </modules>
-    <volumes />
+    <ns0:include href="audio_policy_volumes.xml" />
+    <ns0:include href="default_volume_tables.xml" />
     <surroundSound>
         <formats>
             <format name="AUDIO_FORMAT_AC3" />

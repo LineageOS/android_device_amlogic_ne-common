@@ -16,6 +16,24 @@
       "message": "It looks like that this is device-specific.",
       "revId": "e3ac9a7fa1c49e9ce3792c631bdf444994b3ff82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b659f56_8290e749",
+        "filename": "configs/audio/aml_audio_config.json",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-24T21:16:15Z",
+      "side": 0,
+      "message": "Actually, where did you get this from? The stock jarvis file is different.",
+      "parentUuid": "6f0689d4_7c4e5bfd",
+      "revId": "e3ac9a7fa1c49e9ce3792c631bdf444994b3ff82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

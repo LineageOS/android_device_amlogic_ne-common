@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edd89e46_34eaef5e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-24T02:03:11Z",
+      "side": 1,
+      "message": "Update your devices please. https://review.lineageos.org/q/I996e4986056581053f9f8df66d3cac28371d0e0f",
+      "revId": "332cdbbd3d636d74d31c046936885570631c7ac5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

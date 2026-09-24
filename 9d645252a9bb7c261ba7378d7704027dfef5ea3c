@@ -16,6 +16,24 @@
       "message": "Do we really need all of them?",
       "revId": "9d645252a9bb7c261ba7378d7704027dfef5ea3c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44eb1773_0238a87d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-09-24T14:55:17Z",
+      "side": 1,
+      "message": "In case if we want follow upstream - yes. Not sure what actual issue now exist about sound config. I skipped it on initial bringup, because old configs works, and these are very complex and result in no sound after importing as is.",
+      "parentUuid": "acd96f58_88d7cf8c",
+      "revId": "9d645252a9bb7c261ba7378d7704027dfef5ea3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

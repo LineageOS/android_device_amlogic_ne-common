@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9324787c_9f44cbb4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-09-24T13:45:42Z",
+      "side": 1,
+      "message": "still doesnt work for me on kvim1s and bt headphones",
+      "revId": "a5a413a1d1c3495239917e9718a78875ada3c135",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

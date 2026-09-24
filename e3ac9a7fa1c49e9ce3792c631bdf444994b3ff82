@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f0689d4_7c4e5bfd",
+        "filename": "configs/audio/aml_audio_config.json",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-24T18:12:31Z",
+      "side": 0,
+      "message": "It looks like that this is device-specific.",
+      "revId": "e3ac9a7fa1c49e9ce3792c631bdf444994b3ff82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

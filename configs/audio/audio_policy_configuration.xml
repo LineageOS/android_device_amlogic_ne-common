@@ -75,24 +75,6 @@
                 </mixPort>
             </mixPorts>
             <devicePorts>
-                <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="44100" channelMasks="AUDIO_CHANNEL_OUT_STEREO" />
-                    <gains>
-                        <gain name="gain_1" mode="AUDIO_GAIN_MODE_JOINT" minValueMB="-100000" maxValueMB="0" defaultValueMB="-6000" stepValueMB="100" />
-                    </gains>
-                </devicePort>
-                <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="44100" channelMasks="AUDIO_CHANNEL_OUT_STEREO" />
-                    <gains>
-                        <gain name="gain_1" mode="AUDIO_GAIN_MODE_JOINT" minValueMB="-100000" maxValueMB="0" defaultValueMB="-6000" stepValueMB="100" />
-                    </gains>
-                </devicePort>
-                <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="44100" channelMasks="AUDIO_CHANNEL_OUT_STEREO" />
-                    <gains>
-                        <gain name="gain_1" mode="AUDIO_GAIN_MODE_JOINT" minValueMB="-100000" maxValueMB="0" defaultValueMB="-6000" stepValueMB="100" />
-                    </gains>
-                </devicePort>
                 <devicePort tagName="BT SCO" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" samplingRates="8000 16000" channelMasks="AUDIO_CHANNEL_OUT_MONO" />
                 </devicePort>
@@ -136,9 +118,6 @@
                 <devicePort tagName="Tuner" type="AUDIO_DEVICE_IN_TV_TUNER" role="source" />
             </devicePorts>
             <routes>
-                <route type="mix" sink="BT A2DP Headphones" sources="primary output,tunnel pcm,mmap_no_irq_out,compress offload,Tuner" />
-                <route type="mix" sink="BT A2DP Speaker" sources="primary output,tunnel pcm,mmap_no_irq_out,compress offload,Tuner" />
-                <route type="mix" sink="BT A2DP Out" sources="primary output,tunnel pcm,mmap_no_irq_out,compress offload,Tuner" />
                 <route type="mix" sink="BT SCO" sources="primary output,tunnel pcm,mmap_no_irq_out,compress offload,Tuner" />
                 <route type="mix" sink="BT SCO Headset" sources="primary output,tunnel pcm,mmap_no_irq_out,compress offload,Tuner" />
                 <route type="mix" sink="HDMI Out" sources="primary output,tunnel pcm,mmap_no_irq_out_dynamic,compress offload,direct output,tunnel direct output,Tuner" />

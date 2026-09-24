@@ -16,6 +16,24 @@
       "message": "I\u0027ll wait until @highwaystar.ru@gmail.com tests it on kvim1s.",
       "revId": "1e2954a2e06b537e28c74ae6f044c873928cdc1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26113587_5d741f4d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-24T04:33:35Z",
+      "side": 1,
+      "message": "ditto",
+      "parentUuid": "6b6336f7_2e9733db",
+      "revId": "1e2954a2e06b537e28c74ae6f044c873928cdc1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

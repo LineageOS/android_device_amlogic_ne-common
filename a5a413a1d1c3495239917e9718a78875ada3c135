@@ -16,6 +16,23 @@
       "message": "still doesnt work for me on kvim1s and bt headphones",
       "revId": "a5a413a1d1c3495239917e9718a78875ada3c135",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "424ac77f_8a59c55a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-09-24T15:40:21Z",
+      "side": 1,
+      "message": "actualy works with kvim1s, but for some reason only if device located in front of me on table. But same on stock a11. Not sure if it is antenna issue or this wifi/bt chip.",
+      "revId": "a5a413a1d1c3495239917e9718a78875ada3c135",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

@@ -52,6 +52,24 @@
       "parentUuid": "6b659f56_8290e749",
       "revId": "e3ac9a7fa1c49e9ce3792c631bdf444994b3ff82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2da2c5f0_2ae6c521",
+        "filename": "configs/audio/aml_audio_config.json",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-09-25T01:02:37Z",
+      "side": 0,
+      "message": "aml_audio_config.json  included is kind of dummy, it does nothing. Without it kvim1s sound works too, but produce warning in logs. Need split it by device. Older devices released with a11 should work with dummy config or no config at all",
+      "parentUuid": "b6f7ce95_760cc6dc",
+      "revId": "e3ac9a7fa1c49e9ce3792c631bdf444994b3ff82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

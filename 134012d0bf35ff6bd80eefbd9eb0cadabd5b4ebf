@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f100650_f5e8b609",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-06T20:11:33Z",
+      "side": 1,
+      "message": "Do not pick to 23.2. It applies to 24.0 only.",
+      "revId": "134012d0bf35ff6bd80eefbd9eb0cadabd5b4ebf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

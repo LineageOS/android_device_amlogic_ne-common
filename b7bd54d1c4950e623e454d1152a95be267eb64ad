@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76f07993_8e990879",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-17T10:42:15Z",
+      "side": 1,
+      "message": "They are not only shipped by ohm. I\u0027d rather have these as device-specifc blobs, unless there\u0027s a real need for that and there\u0027s a device that doesn\u0027t ship those.",
+      "revId": "b7bd54d1c4950e623e454d1152a95be267eb64ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

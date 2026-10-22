@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54e61bbb_b5f62b7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-10-22T01:06:09Z",
+      "side": 1,
+      "message": "veified on kvim1s.  It able to passtrough ac3 and dts to LG TV.",
+      "revId": "958d9c6d11ebf40a12ff0dd40ed7447beae04728",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

@@ -24,11 +24,11 @@ namespace_imports = [
 
 blob_fixups: blob_fixups_user_type = {
     (
+       'vendor/bin/hw/android.hardware.graphics.allocator-service',
        'vendor/lib/egl/libGLES_mali.so',
        'vendor/lib/hw/android.hardware.graphics.allocator-V2-arm.so',
        'vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so',
-       'vendor/lib/hw/mapper.arm.so',
-       'vendor/bin/hw/android.hardware.graphics.allocator-service'
+       'vendor/lib/hw/mapper.arm.so'
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/lib/libamlaudiohal@7.0.so': blob_fixup()

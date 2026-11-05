@@ -58,7 +58,6 @@ on early-boot
     insmod /vendor/lib/modules/amvenc_multi.ko
     insmod /vendor/lib/modules/vc8000.ko
     insmod /vendor/lib/modules/memalloc.ko
-    insmod /vendor/lib/modules/amlogic_fbc_lib.ko
     insmod /vendor/lib/modules/amvdec_mavs.ko
     insmod /vendor/lib/modules/amvdec_mavs_v4l.ko
     insmod /vendor/lib/modules/amvdec_av1.ko

@@ -30,7 +30,6 @@ TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 BOARD_KERNEL_CMDLINE := bootconfig
 BOARD_BOOTCONFIG += androidboot.dynamic_partitions=true
 BOARD_BOOTCONFIG += androidboot.dtbo_idx=0
-BOARD_BOOTCONFIG += use_uvm=1
 ifeq ($(TARGET_BOOTDEVICE),usb)
   BOARD_BOOTCONFIG += androidboot.boot_devices=soc/fde00000.dwc3
 else ifeq ($(TARGET_BOOTDEVICE),sdcard)

@@ -16,6 +16,23 @@
       "message": "Outdate comment. See: https://review.lineageos.org/c/LineageOS/android_device_amlogic_sepolicy/+/512709",
       "revId": "49227330584554f321fb8c0d18ad3181c4cecb2d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b99e72b_ce79072e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T01:08:57Z",
+      "side": 1,
+      "message": "You\u0027re doing something wrong. Look here:\n\n```\njaws / # dumpsys media.player | grep dolby\nMedia type \u0027video/dolby-vision\u0027:\n  Decoder \"c2.amlogic.dolby-vision.dav1.decoder\" supports\n    hal name: \"c2.amlogic.dolby-vision.dav1.decoder\"\n  Decoder \"c2.amlogic.dolby-vision.dav1.decoder.secure\" supports\n    hal name: \"c2.amlogic.dolby-vision.dav1.decoder.secure\"\n  Decoder \"c2.amlogic.dolby-vision.dvav.decoder\" supports\n    hal name: \"c2.amlogic.dolby-vision.dvav.decoder\"\n  Decoder \"c2.amlogic.dolby-vision.dvav.decoder.secure\" supports\n    hal name: \"c2.amlogic.dolby-vision.dvav.decoder.secure\"\n  Decoder \"c2.amlogic.dolby-vision.dvhe.decoder\" supports\n    hal name: \"c2.amlogic.dolby-vision.dvhe.decoder\"\n  Decoder \"c2.amlogic.dolby-vision.dvhe.decoder.secure\" supports\n    hal name: \"c2.amlogic.dolby-vision.dvhe.decoder.secure\"\njaws / # dumpsys media.player | grep ac4\nMedia type \u0027audio/ac4\u0027:\n  Decoder \"c2.amlogic.audio.decoder.ac4\" supports\n    hal name: \"c2.amlogic.audio.decoder.ac4\"\n```\n\nPlease sync the tree and try again.",
+      "revId": "49227330584554f321fb8c0d18ad3181c4cecb2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

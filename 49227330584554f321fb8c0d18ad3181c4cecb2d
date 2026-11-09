@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cff836d_477bcc9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T00:32:28Z",
+      "side": 1,
+      "message": "Outdate comment. See: https://review.lineageos.org/c/LineageOS/android_device_amlogic_sepolicy/+/512709",
+      "revId": "49227330584554f321fb8c0d18ad3181c4cecb2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

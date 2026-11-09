@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6eeaba30_8fcf1f1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T01:06:19Z",
+      "side": 1,
+      "message": "Please move it to device/amlogic/common then.",
+      "revId": "2befb3fffeef60df37f69e12b56db1572e0b5640",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d3264194_68b27d06",
@@ -31,6 +48,30 @@
       "writtenOn": "2026-11-09T00:54:42Z",
       "side": 1,
       "message": "Isn\u0027t this true for any audio HAL?",
+      "range": {
+        "startLine": 14,
+        "startChar": 86,
+        "endLine": 15,
+        "endChar": 13
+      },
+      "revId": "2befb3fffeef60df37f69e12b56db1572e0b5640",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38347202_4def8c53",
+        "filename": "AudioOutput/src/org/lineageos/audiooutput/AudioOutput.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T01:06:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3264194_68b27d06",
       "range": {
         "startLine": 14,
         "startChar": 86,

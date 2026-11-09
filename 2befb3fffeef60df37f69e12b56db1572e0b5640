@@ -16,6 +16,29 @@
       "message": "We probably want this somewhere more common? Maybe device/lineage/atv?",
       "revId": "2befb3fffeef60df37f69e12b56db1572e0b5640",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3264194_68b27d06",
+        "filename": "AudioOutput/src/org/lineageos/audiooutput/AudioOutput.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T00:54:42Z",
+      "side": 1,
+      "message": "Isn\u0027t this true for any audio HAL?",
+      "range": {
+        "startLine": 14,
+        "startChar": 86,
+        "endLine": 15,
+        "endChar": 13
+      },
+      "revId": "2befb3fffeef60df37f69e12b56db1572e0b5640",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

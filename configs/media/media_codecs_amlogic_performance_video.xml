@@ -87,9 +87,6 @@
         <MediaCodec name="c2.amlogic.vc1.decoder" type="video/vc1" update="true">
             <Limit name="performance-point-1920x1080" range="60-60" />
         </MediaCodec>
-        <MediaCodec name="c2.amlogic.wvc1.decoder" type="video/wvc1" update="true">
-            <Limit name="performance-point-1920x1080" range="60-60" />
-        </MediaCodec>
         <MediaCodec name="c2.amlogic.h263.decoder.sw" type="video/3gpp" update="true">
             <Limit name="measured-frame-rate-176x144" range="420-420" />
             <Limit name="measured-frame-rate-352x288" range="329-329" />
